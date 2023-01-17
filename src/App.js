@@ -9,11 +9,13 @@ function App(){
   const [index,setIndex]=useState(0)
   console.log("Re rendered")
   function handleClick(){
-    setIndex(index+1);
+    setIndex(index=>index+1);
+    console.log(index)
   }
   return (
     <>
       <button onClick={handleClick}>Click me</button>
+      
       <input ></input>
     </>
   )
